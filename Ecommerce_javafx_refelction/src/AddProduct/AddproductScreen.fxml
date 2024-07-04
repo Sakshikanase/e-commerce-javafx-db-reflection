@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddProduct.AddproductScreenController">
+   <children>
+      <Label layoutX="38.0" layoutY="57.0" text="Enter the product details:" textFill="#a82398">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="145.0" text="Product ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="200.0" prefHeight="27.0" prefWidth="140.0" text="Product Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="248.0" text="Product Quantity">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="305.0" text="Product Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="248.0" layoutY="146.0" promptText="Enter Product ID" />
+      <TextField fx:id="name" layoutX="248.0" layoutY="201.0" promptText="Enter Product name" />
+      <TextField fx:id="quantity" layoutX="248.0" layoutY="249.0" promptText="Enter product Quantity" />
+      <TextField fx:id="price" layoutX="248.0" layoutY="306.0" promptText="Product price" />
+      <Button fx:id="back" layoutX="354.0" layoutY="342.0" mnemonicParsing="false" onAction="#backclick" style="-fx-background-color: purple;" text="&lt;-back" textFill="#ee4e4e">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="submit" layoutX="465.0" layoutY="342.0" mnemonicParsing="false" onAction="#submitclick" style="-fx-background-color: purple;" text="Submit" textFill="#53fc4b">
+         <font>
+            <Font name="Bodoni MT Black" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" layoutX="47.0" layoutY="342.0" prefHeight="40.0" prefWidth="284.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
